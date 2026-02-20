@@ -622,8 +622,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32f65c7643ba65478204ae6fc2351d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SFXScript
-  sFXSource: {fileID: 0}
-  audioClip: []
+  sFXSource: {fileID: 660534721}
+  audioClip:
+  - {fileID: 8300000, guid: 3b5dca33bdf70dc4a8452b04f6494cbf, type: 3}
 --- !u!114 &574866497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,7 +876,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 892809834}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 574866496}
+        m_TargetAssemblyTypeName: SFXScript, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 574866497}
+        m_TargetAssemblyTypeName: SceneChangerScript, Assembly-CSharp
+        m_MethodName: LoadWithDelay
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Alley
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &892809834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,7 +1254,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1697942381}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 574866497}
+        m_TargetAssemblyTypeName: SceneChangerScript, Assembly-CSharp
+        m_MethodName: QuitApplication
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1697942381
 MonoBehaviour:
   m_ObjectHideFlags: 0
