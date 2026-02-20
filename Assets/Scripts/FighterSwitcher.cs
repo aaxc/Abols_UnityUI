@@ -6,7 +6,7 @@ public class FighterSwitcher : MonoBehaviour
     [SerializeField] private Image targetImage;
     [SerializeField] private Sprite robotSprite;
     [SerializeField] private Sprite humanSprite;
-
+    
     public void OnDropdownChanged(int index)
     {
         if (index == 0)
